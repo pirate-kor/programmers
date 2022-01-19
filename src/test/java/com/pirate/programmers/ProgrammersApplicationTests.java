@@ -1,5 +1,6 @@
 package com.pirate.programmers;
 
+import com.pirate.programmers.practice.C30L42578;
 import com.pirate.programmers.practice.C30L42746;
 import com.pirate.programmers.practice.C30L42839;
 import com.pirate.programmers.practice.C30L92334;
@@ -31,5 +32,11 @@ class ProgrammersApplicationTests {
     public void testC30L42839() {
         assertEquals(new C30L42839().solution("17"), 3);
         assertEquals(new C30L42839().solution("011"), 2);
+    }
+
+    @Test
+    public void testC30L42578() {
+        assertEquals(new C30L42578().solution(new String[][]{{"yellowhat", "headgear"},{"bluesunglasses", "eyewear"},{"green_turban", "headgear"}}), 5);
+        assertEquals(new C30L42578().solution(new String[][]{{"crowmask", "face"},{"bluesunglasses", "face"},{"smoky_makeup", "face"}}), 3);
     }
 }
