@@ -1,9 +1,6 @@
 package com.pirate.programmers;
 
-import com.pirate.programmers.practice.C30L42578;
-import com.pirate.programmers.practice.C30L42746;
-import com.pirate.programmers.practice.C30L42839;
-import com.pirate.programmers.practice.C30L92334;
+import com.pirate.programmers.practice.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -38,5 +35,17 @@ class ProgrammersApplicationTests {
     public void testC30L42578() {
         assertEquals(new C30L42578().solution(new String[][]{{"yellowhat", "headgear"},{"bluesunglasses", "eyewear"},{"green_turban", "headgear"}}), 5);
         assertEquals(new C30L42578().solution(new String[][]{{"crowmask", "face"},{"bluesunglasses", "face"},{"smoky_makeup", "face"}}), 3);
+    }
+
+    @Test
+    public void testC30L43165() {
+        assertEquals(new C30L43165().solution(new int[]{1, 1, 1, 1, 1}, 3), 5);
+    }
+
+    @Test
+    public void testC30L42842() {
+        assertArrayEquals(new C30L42842().solution(10, 2), new int[]{4, 3});
+        assertArrayEquals(new C30L42842().solution(8, 1), new int[]{3, 3});
+        assertArrayEquals(new C30L42842().solution(24, 24), new int[]{8, 6});
     }
 }
