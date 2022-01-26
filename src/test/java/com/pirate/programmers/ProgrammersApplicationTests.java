@@ -48,4 +48,11 @@ class ProgrammersApplicationTests {
         assertArrayEquals(new C30L42842().solution(8, 1), new int[]{3, 3});
         assertArrayEquals(new C30L42842().solution(24, 24), new int[]{8, 6});
     }
+
+    @Test
+    public void testC30L77484() {
+        assertArrayEquals(new C30L77484().solution(new int[]{44, 1, 0, 0, 31, 25}, new int[]{31, 10, 45, 1, 6, 19}), new int[]{3, 5});
+        assertArrayEquals(new C30L77484().solution(new int[]{0, 0, 0, 0, 0, 0}, new int[]{38, 19, 20, 40, 15, 25}), new int[]{1, 6});
+        assertArrayEquals(new C30L77484().solution(new int[]{45, 4, 35, 20, 3, 9}, new int[]{20, 9, 3, 45, 4, 35}), new int[]{1, 1});
+    }
 }
