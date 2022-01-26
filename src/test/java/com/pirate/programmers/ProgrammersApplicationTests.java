@@ -55,4 +55,11 @@ class ProgrammersApplicationTests {
         assertArrayEquals(new C30L77484().solution(new int[]{0, 0, 0, 0, 0, 0}, new int[]{38, 19, 20, 40, 15, 25}), new int[]{1, 6});
         assertArrayEquals(new C30L77484().solution(new int[]{45, 4, 35, 20, 3, 9}, new int[]{20, 9, 3, 45, 4, 35}), new int[]{1, 1});
     }
+
+    @Test
+    public void testC30L86051() {
+        assertEquals(new C30L86051().solution(new int[]{1,2,3,4,6,7,8,0}), 14);
+        assertEquals(new C30L86051().solution(new int[]{5,8,4,0,6,7,9}), 6);
+
+    }
 }
