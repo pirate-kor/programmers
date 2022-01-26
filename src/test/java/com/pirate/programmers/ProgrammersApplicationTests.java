@@ -60,6 +60,18 @@ class ProgrammersApplicationTests {
     public void testC30L86051() {
         assertEquals(new C30L86051().solution(new int[]{1,2,3,4,6,7,8,0}), 14);
         assertEquals(new C30L86051().solution(new int[]{5,8,4,0,6,7,9}), 6);
+    }
 
+    @Test
+    public void testC30L87389() {
+        assertEquals(new C30L87389().solution(10), 3);
+        assertEquals(new C30L87389().solution(12), 11);
+    }
+
+    @Test
+    public void testC30L86491() {
+        assertEquals(new C30L86491().solution(new int[][]{{60, 50}, {30, 70}, {60, 30}, {80, 40}}), 4000);
+        assertEquals(new C30L86491().solution(new int[][]{{10, 7}, {12, 3}, {8, 15}, {14, 7}, {5, 15}}), 120);
+        assertEquals(new C30L86491().solution(new int[][]{{14, 4}, {19, 6}, {6, 16}, {18, 7}, {7, 11}}), 133);
     }
 }
