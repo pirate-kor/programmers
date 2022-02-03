@@ -74,4 +74,10 @@ class ProgrammersApplicationTests {
         assertEquals(new C30L86491().solution(new int[][]{{10, 7}, {12, 3}, {8, 15}, {14, 7}, {5, 15}}), 120);
         assertEquals(new C30L86491().solution(new int[][]{{14, 4}, {19, 6}, {6, 16}, {18, 7}, {7, 11}}), 133);
     }
+
+    @Test
+    public void testC30L81303() {
+        assertEquals(new C30L81303().solution(8, 2, new String[]{"D 2","C","U 3","C","D 4","C","U 2","Z","Z"}), "OOOOXOOO");
+        assertEquals(new C30L81303().solution(8, 2, new String[]{"D 2","C","U 3","C","D 4","C","U 2","Z","Z","U 1","C"}), "OOXOXOOO");
+    }
 }
