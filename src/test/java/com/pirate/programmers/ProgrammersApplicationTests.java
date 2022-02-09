@@ -80,4 +80,9 @@ class ProgrammersApplicationTests {
         assertEquals(new C30L81303().solution(8, 2, new String[]{"D 2","C","U 3","C","D 4","C","U 2","Z","Z"}), "OOOOXOOO");
         assertEquals(new C30L81303().solution(8, 2, new String[]{"D 2","C","U 3","C","D 4","C","U 2","Z","Z","U 1","C"}), "OOXOXOOO");
     }
+
+    @Test
+    public void testC30L42888() {
+        assertArrayEquals(new C30L42888().solution(new String[]{"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"}), new String[]{"Prodo님이 들어왔습니다.", "Ryan님이 들어왔습니다.", "Prodo님이 나갔습니다.", "Prodo님이 들어왔습니다."});
+    }
 }
