@@ -85,4 +85,12 @@ class ProgrammersApplicationTests {
     public void testC30L42888() {
         assertArrayEquals(new C30L42888().solution(new String[]{"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"}), new String[]{"Prodo님이 들어왔습니다.", "Ryan님이 들어왔습니다.", "Prodo님이 나갔습니다.", "Prodo님이 들어왔습니다."});
     }
+
+    @Test
+    public void testC30L60058() {
+//        assertEquals(new C30L60058().solution("(()())()"), "(()())()");
+//        assertEquals(new C30L60058().solution(")("), "()");
+//        assertEquals(new C30L60058().solution("()))((()"), "()(())()");
+        assertEquals(new C30L60058().solution("))()())(((()"), "(((()())))()");
+    }
 }
