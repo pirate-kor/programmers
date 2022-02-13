@@ -93,4 +93,11 @@ class ProgrammersApplicationTests {
 //        assertEquals(new C30L60058().solution("()))((()"), "()(())()");
         assertEquals(new C30L60058().solution("))()())(((()"), "(((()())))()");
     }
+
+    @Test
+    public void testC30L42577() {
+        new C30L42577().solution(new String[]{"119", "97674223", "1195524421"});
+        new C30L42577().solution(new String[]{"123","456","789"});
+        new C30L42577().solution(new String[]{"12","123","1235","567","88"});
+    }
 }
